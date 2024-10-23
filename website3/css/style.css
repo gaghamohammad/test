@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #0D0D0D;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+}
+
+::selection {
+  background-color: #5E9E4D;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper, .container, header {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header .tophead {
+  margin-bottom: 30px;
+  padding: 30px 0;
+  border-bottom: solid 1px #5E9E4D;
+  display: flex;
+  justify-content: space-between;
+}
+header .tophead .searchcart {
+  display: flex;
+}
+header .tophead .searchcart svg {
+  height: 20px;
+  width: 20px;
+  fill: white;
+  background-color: #5E9E4D;
+}
+header .tophead .searchcart form {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: solid 2px #5E9E4D;
+  border-radius: 15px 50px 50px 15px;
+  margin-right: 15px;
+}
+header .tophead .searchcart form input {
+  border: none;
+}
+header .tophead .searchcart form input:focus {
+  outline: none;
+}
+header .tophead .searchcart form button {
+  border-radius: 50px;
+  background-color: #5E9E4D;
+  height: 35px;
+  width: 50px;
+  margin-right: -2px;
+  border: #5E9E4D;
+}
+header .tophead .searchcart .cartbutton {
+  display: flex;
+  border-radius: 50%;
+  padding: 8px 15px;
+  background-color: #5E9E4D;
+  margin: 0px 3px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .mainNav a {
+  color: #0D0D0D;
+  font-size: 18px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+header nav .mainNav a:hover {
+  background-color: #5E9E4D;
+  color: white;
+}
+header nav .profileDrop {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+header nav .profileDrop span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-right: 25px;
+  cursor: default;
+}
+header nav .profileDrop span::after {
+  content: "";
+  position: absolute;
+  border-right: solid 8px transparent;
+  border-left: solid 8px transparent;
+  border-top: solid 10px gray;
+  right: 0;
+}
+header nav .profileDrop .dropdown {
+  position: absolute;
+  right: 0;
+  top: 110%;
+  background-color: white;
+  border: solid 1px #eee;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 1;
+}
+header nav .profileDrop .dropdown a {
+  padding: 10px 15px;
+  display: block;
+  border-bottom: solid 1px #eee;
+  color: blue;
+}
+header nav .profileDrop .dropdown a:hover {
+  background-color: #efefef;
+  padding-left: 18px;
+  padding-right: 12px;
+}
+header nav .profileDrop:hover ::after {
+  transform: rotate(180deg);
+}
+header nav .profileDrop:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+
+.container {
+  display: flex;
+  height: 500px;
+}
+.container h1 {
+  font-size: 30px;
+  color: #0D0D0D;
+  text-transform: capitalize;
+}
+.container h1 div {
+  font-size: 50px;
+  color: #5E9E4D;
+  position: relative;
+}
+.container h1 div span {
+  position: relative;
+  z-index: 1;
+}
+.container h1 div span::after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  background-color: #FFC973;
+  left: 0;
+  bottom: 8px;
+  position: absolute;
+  z-index: -1;
+}
+.container h1 > span {
+  color: #A74F12;
+}
+.container p {
+  font-size: 21px;
+  display: flex;
+  flex-direction: row;
+  color: black;
+}
+.container .shopplant {
+  display: flex;
+  height: 55px;
+  width: 100px;
+  border-radius: 40%;
+  padding: 20px;
+  background-color: #A74F12;
+}
+.container .GREENER {
+  width: 49%;
+  margin: 5px;
+}
+.container .section2 {
+  display: flex;
+  width: 49px;
+  margin: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
